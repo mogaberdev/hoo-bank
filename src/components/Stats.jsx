@@ -7,7 +7,7 @@ const Stats = () => (
       {stats.map((stat, index) => (
         <div key={stat.id} className={`flex-1 flex justify-start items-center flex-row m-3`}>
           {index === stats.length - 1 ? <h4 className='font-semibold font-poppins xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white'>$<CountUp end={stat.value}/>M+</h4> : <h4 className='font-semibold font-poppins xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white'><CountUp end={stat.value}/>+</h4>}
-          <p className='font-normal font-poppins xs:text-[20px] text-[50px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3'>{stat.title}</p>
+          <p className='font-normal font-poppins xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3'>{stat.title}</p>
         </div>
       ))}
     </section>
